@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Naturalis Service Menu  and Page feature.
+ */
+
+include_once 'naturalis_service_menu_and_page.features.inc';

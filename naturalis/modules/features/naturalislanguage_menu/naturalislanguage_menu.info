@@ -1,0 +1,9 @@
+name = Naturalis Language Menu
+core = 7.x
+package = Naturalis Installation Profile
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = menu-naturalis-language-menu
+features[menu_links][] = menu-naturalis-language-menu_en:<front>
+features[menu_links][] = menu-naturalis-language-menu_nl:<front>

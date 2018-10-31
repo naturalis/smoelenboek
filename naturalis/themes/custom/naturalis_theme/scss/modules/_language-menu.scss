@@ -1,0 +1,36 @@
+#language-menu {
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 50px;
+  top: 10px;
+  width: 20px;
+  li {
+    display: block;
+    margin: 0;
+    padding: 3px 0;
+    text-align: right;
+    background: transparent;
+
+  }
+  a {
+    &:link, &:visited {
+      color: #999;
+      display: block;
+      font-size: 0.705882em;
+      line-height: 1;
+      margin: 0;
+      padding: 0;
+    }
+    color: #999;
+    display: block;
+    font-size: 0.705882em;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+  }
+  .active a {
+    color: #fff;
+  }
+}

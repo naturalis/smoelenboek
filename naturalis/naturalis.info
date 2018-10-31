@@ -1,0 +1,43 @@
+name = Naturalis
+description = Naturalis Software Development Installation Profile
+version = VERSION
+core = 7.x
+
+; from STANDARD installation profile
+dependencies[] = block
+dependencies[] = dblog
+dependencies[] = block
+; dependencies[] = color
+; dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = search
+; dependencies[] = shortcut
+;dependencies[] = toolbar
+dependencies[] = overlay
+dependencies[] = field_ui
+dependencies[] = file
+; dependencies[] = rdf
+
+; NATURALIS
+dependencies[] = features
+dependencies[] = smtp
+dependencies[] = strongarm
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = module_filter
+dependencies[] = admin_menu
+dependencies[] = adminimal_admin_menu
+dependencies[] = jquery_update
+dependencies[] = wysiwyg
+dependencies[] = better_formats
+dependencies[] = naturalis_theme_feature

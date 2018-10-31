@@ -1,0 +1,43 @@
+.breadcrumbs {
+  background: none;
+  display: inline;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  > * {
+    float: none;
+    display: inline !important;
+    font-size: 1em;
+    line-height:1em;
+    text-transform: none;
+    color: $blue;
+
+    a {
+      color:$blue;
+      text-decoration: underline;
+      &:hover{
+        color: $green;
+      }
+    }
+    &.current {
+      color: $white;
+      a, a:hover {
+        color: $white;
+        text-decoration: none;
+      }
+    }
+
+
+    &:before {
+      font-family: "App2";
+      content: $icon-arrow-right-lean;
+      font-size: 24px;
+      color: $white;;
+      margin: 0 0.2rem;
+      position: relative;
+      top: 6px;
+      display: inline-block;
+      font-weight: normal !important;
+    }
+  }
+}

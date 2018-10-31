@@ -1,0 +1,75 @@
+#bottom-bar{
+  background-color: $topbar-bg-color;
+
+  ul{
+    margin: 0;
+  }
+
+  hr{
+    margin: 0;
+    border-color: #333;
+  }
+
+  &, a{
+    color: $topbar-link-color;
+  }
+
+  a:hover{
+    color: $green;
+  }
+
+  & > div + div {
+    border-top: 1px solid $gray-3;
+  }
+
+}
+
+#bottom-bar-top{
+  font-size: 15px;
+  padding: 1em 0 23px 0;
+  position: relative;
+
+  & > div{
+    padding: 0;
+  }
+
+  .external-links{
+    position: absolute;
+    right: 0;
+    text-align: right;
+    padding: 0;
+  }
+
+  ul{
+    display: inline;
+    font-size: 12px;
+  }
+
+  li{
+    display: inline;
+  }
+
+
+}
+
+#bottom-bar-bottom{
+
+  ul{
+    display: inline;
+    font-size: 12px;
+  }
+
+  .links{
+    margin-left: 1em;
+    a{
+      text-decoration: underline;
+    }
+  }
+
+  li{
+    display: inline;
+    margin-right: 1em;
+  }
+
+  padding: 15px 0;
+}

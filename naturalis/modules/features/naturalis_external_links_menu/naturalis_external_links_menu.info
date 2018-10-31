@@ -1,0 +1,9 @@
+name = Naturalis External Links Menu
+description = Provides a menu with external links to be displayed in the footer
+core = 7.x
+package = Naturalis Installation Profile
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = menu-naturalis-externe-links
+features[menu_links][] = menu-naturalis-externe-links_naar-naturalisnl:http://www.naturalis.nl

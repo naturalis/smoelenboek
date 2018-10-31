@@ -1,0 +1,206 @@
+/* @file
+ * This file is a custom file that loads all files. Each non-base layer
+ * can be disabled.
+ *
+ * Do not name this file "STARTER.scss". This file should be named
+ * naturalis_theme.scss. If you used the drush command to generate this subtheme,
+ * it should be named for you.
+ *
+ * This application file (naturalis_theme.scss) is where all the partials are
+ * imported.
+ *
+ * Theme styles are categorized using SMACSS standards. They utilize
+ * categorization of styles into various categories. Those categories are the
+ * following:
+ *
+ * - Base: CSS reset/normalize plus HTML element styling.
+ * - Layout: Macro arrangement of a web page, including any grid systems.
+ * - Modules: Dictate minor layout modules or reusable elements.
+ * - States: Describe the appearance of a module in various states.
+ * - Theme: Specific customizations for your subtheme.
+ * For more information about this new Drupal css file standard, please review
+ * the following:
+ * - https://drupal.org/node/1887922
+ * - http://smacss.com/
+ */
+
+// Make sure the charset is set appropriately
+@charset "UTF-8";
+
+// Core
+// The following imports bootstrap the theme.
+// You may comment out bourbon if you don't want to use its library of mixins.
+// The theme will have compilation errors if Foundation is not imported.
+
+// Global Naturalis Theme variables.
+@import "vendor/foundation/variables";
+// Comment out this import if you don't want to use normalize.
+@import "vendor/foundation/normalize";
+// Comment out this import below if you are customizing you imports below.
+@import "vendor/foundation/foundation";
+// Comment out this import if you don't want to use Bourbon, a replacement for Compass mixins.
+@import "bourbon";
+
+
+// Import our mixins early so they can be used by other partials.
+// Optional.
+//@import "base/mixins";
+
+// Common file is where you place common utility classes to extend or
+// parametrics.
+// Optional.
+// @import "base/common";
+
+// Fix for some Drupal CSS quirks (Drupalisms).
+@import "base/drupal";
+
+// Styling for elements.
+// Optional.
+@import "base/elements";
+@import "base/fonts";
+
+// ICONS
+@import "icons";
+
+// Layout
+// Each section of the document has it's own partial seperated out to improve
+// developer experience. Additionally, grids can be declared in layouts as well.
+@import "layout/header";
+@import "layout/main";
+@import "layout/aside";
+@import "layout/footer";
+
+// Modules
+// @import "modules/block";
+// @import "modules/button";
+@import "modules/topbar";
+@import "modules/footer";
+@import "modules/breadcrumbs";
+@import "modules/naturalis-header";
+@import "modules/language-menu";
+
+// States
+// @import "states/collapse";
+
+// Themes
+// @import "theme/button-light";
+
+// Older IE support
+// @import "vendor/ie";
+
+
+body {
+  background-color: $ghost;
+}
+.l-main{
+  min-height: 100%;
+  background-color: $white;
+}
+
+// COLOURS
+
+$yellow                  : #ffed00;
+$orange                  : #f29400;
+$orange                  : #ef6d14;
+$red                     : #e3004a;
+$blue                    : #009ee0;
+$green                   : #009932;
+$purple                  : #3e2782;
+$brown                   : #542e08;
+$gray                    : #b2b1a8;
+$black                   : #000000;
+$white                   : #ffffff;
+$ghost                   : #EEEDE9;
+$smoke                   : #F6F6F4;
+
+@each $color in ('yellow', $yellow), ('orange', $orange), ('red ', $red   ), ('blue', $blue  ), ('green', $green ), ('purple', $purple), ('brown', $brown ), ('gray', $gray  ), ('black', $black ), ('white', $white ), ('ghost', $ghost ){
+
+    $name: nth($color, 1);
+    $value: nth($color, 2);
+
+    .background-#{$name} {
+      background-color: $value;
+    }
+}
+
+a{
+  color: $blue;
+}
+
+#help{
+  a{
+    padding-right: 0;
+  }
+  .icon-help{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 32px;
+    width: 37px;
+    text-align: center;
+    border-left: 1px solid #333;
+  }
+}
+
+.menu{
+  font-size: 12px;
+  margin-left: 0;
+
+  ul, li{
+    display: block;
+  }
+  a{
+    color: $black;
+  }
+}
+
+.tabs{
+  margin-top: 1em;
+
+  li{
+    button.secondary, .button.secondary {
+      background-color: $smoke;
+      border: 2px solid $gray-9;
+      color: $gray-6;
+      margin-right: -2px;
+    }
+  }
+  .active{
+    button.secondary, .button.secondary {
+      background-color: white;
+      border-bottom: 0;
+    }
+  }
+}
+
+table{
+
+
+  thead{
+    a{
+      color: $black;
+    }
+  }
+
+  tr, th{
+    border-bottom: 1px solid $ghost;
+  }
+
+  td{
+    line-height: 40px;
+  }
+}
+
+#logo-large{
+  padding: 25px;
+}
+
+.ntrls-3col{
+  #logo-large{
+    width: 90%;
+  }
+}
+
+h3{
+  font-weight: bold;
+}
