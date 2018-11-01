@@ -1,0 +1,2 @@
+00 14 * * * cd /data/project && cp -r ../images && cp -r ../xml .
+15 14 * * * cd /opt/docker-drupal;/usr/local/bin/docker-compose exec -T drupal /opt/project/smoelimport.sh 2>&1 >> /var/log/smoelenimport.log
