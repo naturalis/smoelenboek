@@ -1,2 +1,0 @@
-C:\beheer\rsync\rsync.exe -av --chmod=644 -e  "/cygdrive/c/beheer/rsync/ssh.exe -i /cygdrive/c/beheer/rsync/id_rsa -o StrictHostKeyChecking=no " /cygdrive/c/Inetpub/mysite/smoelenboek/_org/* sync.nnms28@smoelenboek.nnm.local:/var/www/images
-C:\beheer\rsync\rsync.exe -v --chmod=644 -e  "/cygdrive/c/beheer/rsync/ssh.exe -i /cygdrive/c/beheer/rsync/id_rsa -o StrictHostKeyChecking=no " /cygdrive/c/beheer/smoels.xml sync.nnms28@smoelenboek.nnm.local:/var/www/xml
